@@ -1,2 +1,10 @@
-$default-font: "roboto-example", sans-serif
+$default-font: "sans", sans-serif
+$default-bold: "sans-bold", sans-serif
+$john-bold: "john", sans-serif
+$source-sans: "source-sans", sans-serif
 $accent: orange
+
+=transit($prop, $durat, $trans_timing)
+	transition-property: $prop;
+	transition-duration: $durat;
+	transition-timing-function: $trans_timing;
