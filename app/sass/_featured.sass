@@ -4,15 +4,72 @@
 	justify-content: center
 	align-items: center
 	text-align: center
+	padding-bottom: 0
 .featured_wrap
 	width: 100%
 	display: flex
 	flex-direction: row
+	height: 320px
+	overflow: hidden
+	margin-top: 60px
 	img
 		width: 100%
-		height: 100%
 .feats_img_m
+	background: url('../img/feats1.jpg') center center no-repeat
+	background-size: cover
 	width: 50%
-
-.feats_img
+.feats_img_1
+	background: url('../img/feats2.jpg') center center no-repeat
+	background-size: cover
 	width: 25%
+	position: relative
+.feats_img_2
+	background: url('../img/feats3.jpg') center center no-repeat
+	background-size: cover
+	width: 25%
+	position: relative
+.cover_lay
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	h1
+		color: #fff
+		margin: 0
+.submit
+	background: url('../img/submit_bg.jpg') center center no-repeat
+	background-size: cover
+	height: 112px
+	width: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+.submit_txt
+	width: 90%
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+	margin: 0px auto
+	h2
+		font-size: 20px
+		line-height: 20px
+		color: #fff
+		font-weight: 400
+		letter-spacing: 1px
+	a
+		font-size: 16px
+		line-height: 16px
+		text-decoration: none
+		color: #fff
+		padding: 10px 25px
+		border: 1px solid #fff
+		border-radius: 20px
+		+transit(all, 0.5s, ease-in-out)
+		&:hover
+			color: #333b46
+			border: 1px solid #333b46
