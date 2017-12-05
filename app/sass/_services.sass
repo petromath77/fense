@@ -6,20 +6,75 @@
 	align-items: center
 	text-align: center
 .services_wrap
+	width: 90%
 	display: flex
 	flex-direction: row
-	justify-content: center
-	align-items: center
+	justify-content: space-between
+	margin: 70px auto 0
+.service_wrap_cont
+	width: 50%
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: flex-start
 .serv_icons
-	.pe-7s-tools,
-	.pe-7s-paint,
-	.pe-7s-joy,
-	.pe-7s-plug
+	a
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
 		background: #81868e
 		width: 54px
 		height: 54px
 		border-radius: 50%
-		font-size: 30px
-		line-height: 50px
+		margin-bottom: 20px
+		text-decoration: none
 		color: #fff
-		margin-right: 20px
+		+transit(all, 0.5s, ease-in-out)
+		&:last-child
+			margin-bottom: 0
+		&:hover,
+		&:focus
+			background: #19bd9a
+		.pe-7s-tools,
+		.pe-7s-paint,
+		.pe-7s-joy,
+		.pe-7s-plug
+			font-size: 30px
+			line-height: 50px
+.details_desc_txt
+	width: 78%
+	align-items: left
+
+	p
+		text-align: left
+.round_wrap
+	width: 40%
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+.round_item
+	display: flex
+	flex-direction: column
+	h4
+		font-size: 16px
+		line-height: 16px
+		color: #81868e
+		font-weight: 400
+		letter-spacing: 1px
+.round_item_wrap
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 112px
+	height: 112px
+	border-radius: 50%
+	border: 5px solid #56ccb3
+	margin-bottom: 20px
+	h3
+		font-size: 25px
+		line-height: 25px
+		color: #81868e
+		font-weight: 400

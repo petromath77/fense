@@ -6,6 +6,7 @@
 @import "details"
 @import "featured"
 @import "services"
+@import "impress"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -76,5 +77,18 @@ section
 	display: block
 	max-width: 100%
 	height: auto
+.details_desc_txt
+	display: flex
+	flex-direction: column
+	h2
+		font-family: $default-font
+		font-size: 20px
+		line-height: 20px
+		color: #464646
+		letter-spacing: 1px
+		font-weight: 400
 
+	p
+		font-size: 14px
+		line-height: 26px
 @import "media" // Всегда в конце
