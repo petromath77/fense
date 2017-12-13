@@ -1,0 +1,95 @@
+.team
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+.team_wrap
+	width: 90%
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin: 60px auto 0
+.team_img
+	img
+		width: 100%
+		height: auto
+.team_data
+	width: 50%
+	text-align: right
+	margin-top: 30px
+	display: flex
+	flex-direction: column
+	align-items: center
+.team_data_wrap
+	width: 90%
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	h2
+		font-family: $default-font
+		font-size: 20px
+		line-height: 20px
+		font-weight: 400
+		margin-bottom: 10px
+	h3
+		font-family: $default-font
+		font-style: italic
+		font-size: 14px
+		line-height: 14px
+		font-weight: 400
+		text-transform: uppercase
+		color: #81868e
+		margin-bottom: 20px
+	p
+		margin-bottom: 10px
+.values
+	width: 85%
+	display: flex
+	flex-direction: column
+	align-items: center
+.values_item
+	width: 100%
+	position: relative
+	margin-top: 30px
+	h2
+		font-family: $default-font
+		text-align: left
+		font-size: 16px
+		line-height: 16px
+		font-weight: 400
+		text-transform: uppercase
+		color: #81868e
+		letter-spacing: 1px
+	.value_percent
+		width: 100%
+		background: #e1e4e9
+		height: 4px
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		.value_inner
+			background: #19bd9a
+			height: 4px
+			+transit(width, 1s, ease-in-out)
+.value_data
+	width: 100%
+.value_data_wrap
+	height: 4px 
+	background: #e1e4e9
+.value-percent
+	height: 4px 
+	background: #19bd9a
+	width: 1px
+	+transit(width, 1s, ease)
+.data_inner
+	position: absolute
+	right: 0
+	top: 0
+	font-family: $default-font
+	font-size: 16px
+	line-height: 16px
+	font-weight: 400
+	text-transform: uppercase
+	color: #81868e
+	letter-spacing: 1px
