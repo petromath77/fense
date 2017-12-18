@@ -19,6 +19,12 @@
 	flex-direction: column
 	justify-content: flex-start
 	align-items: center
+	position: relative
+	cursor: pointer
+	overflow: hidden
+	&:hover
+		.price_hidden
+			transform: translateY(0px)
 .price_name
 	background: #19bd9a
 	width: 100%
@@ -49,3 +55,37 @@
 	line-height: 42px
 	color: #19bd9a
 	margin-bottom: 10px
+.price_hidden
+	background: #fff
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	min-height: 300px
+	display: flex
+	flex-direction: column
+	justify-content: flex-start
+	align-items: left
+	padding: 35px 35px 100px
+	transform: translateY(-300px)
+	+transit(all, 0.7s, ease-in-out)
+	a
+		font-size: 16px
+		line-height: 16px
+		color: #fff
+		text-decoration: none
+
+.hidden
+	position: absolute
+	bottom: 0
+	left: 0
+.price_points
+	list-style: none
+	text-align: left
+	li
+		font-family: $default-font
+		font-size: 14px
+		line-height: 27px
+		color: #81868e
+		letter-spacing: 1px
+

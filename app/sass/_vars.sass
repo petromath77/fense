@@ -9,3 +9,12 @@ $accent: orange
 	transition-property: $prop;
 	transition-duration: $durat;
 	transition-timing-function: $trans_timing;
+@mixin placeholder 
+  &::-webkit-input-placeholder 
+  	@content
+  &:-moz-placeholder 
+  	@content
+  &::-moz-placeholder
+  	@content
+  &:-ms-input-placeholder
+    @content
