@@ -6,18 +6,28 @@
 	align-items: center
 	text-align: center
 .services_wrap
-	width: 90%
 	display: flex
 	flex-direction: row
 	justify-content: space-between
-	margin: 70px auto 0
+	margin: 70px auto 20px
+	overflow: hidden
 .service_wrap_cont
-	width: 50%
+	width: 90%
+.tabs_item
+	display: none
+	&:first-child
+		display: block
+.service_tab_content
 	display: flex
 	flex-direction: row
 	justify-content: space-between
-	align-items: flex-start
-.serv_icons
+	align-items: center
+ul.serv_icons
+	list-style: none
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
 	a
 		display: flex
 		flex-direction: column
@@ -33,8 +43,7 @@
 		+transit(all, 0.5s, ease-in-out)
 		&:last-child
 			margin-bottom: 0
-		&:hover,
-		&:focus
+		&:hover
 			background: #19bd9a
 		.pe-7s-tools,
 		.pe-7s-paint,
@@ -42,10 +51,12 @@
 		.pe-7s-plug
 			font-size: 30px
 			line-height: 50px
+li.current
+	a
+		background: #19bd9a
 .details_desc_txt
-	width: 78%
+	width: 50%
 	align-items: left
-
 	p
 		text-align: left
 .round_wrap
