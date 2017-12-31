@@ -31,6 +31,8 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/masonry/masonry.pkgd.min.js',
 		'app/libs/sexy-tabs/sexy-tabs.js',
 		'app/libs/swiper/swiper.min.js',
+		'app/libs/slicknav/jquery.slicknav.js',
+		'app/libs/scroll2id/PageScroll2id.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

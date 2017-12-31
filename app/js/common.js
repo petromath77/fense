@@ -1,5 +1,28 @@
 $(function() {
 
+  $(function(){
+    $('#menu').slicknav({
+      prependTo:'nav',
+      parentTag:'div',
+    });
+  });
+
+  $('.menu li a').mPageScroll2id();
+
+  $('nav.menu li a').on('click', function(){
+    $('nav.menu li a').removeClass('active_a');
+    $(this).addClass('active_a');
+    console.log('!!!');
+  });
+
+  $('.slicknav_menu li a').mPageScroll2id();
+
+  $('.slicknav_nav li a').on('click', function(){  
+    $('.slicknav_nav a').removeClass('active_a');
+    $(this).addClass('active_a');
+    console.log('!!!');
+  });
+
   $('.grid').imagesLoaded( function() {
     $('.grid').masonry({
       // options

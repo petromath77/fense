@@ -16,6 +16,7 @@ header
 	justify-content: space-between
 	margin-top: 40px
 	align-items: center
+	position: relative
 .logo
 	margin-left: 20px
 	a
@@ -27,7 +28,7 @@ header
 		text-decoration: none
 		letter-spacing: 1px	
 
-.menu
+nav.menu
 	ul
 		display: flex;
 		flex-direction: row;
@@ -45,11 +46,55 @@ header
 				padding: 7px 20px
 				border: 1px solid transparent
 				border-radius: 20px
-				+transit(all, 0.5s, ease-in-out)	
-				&:active,
+				+transit(all, 0.5s, ease-in-out)
 				&:hover,
-				&:focus
+				&:focus,
+				&.active_a
+					color: rgb(255, 255, 255);
 					border: 1px solid #fff
+					border-radius: 20px
+
+#menu
+	display: flex
+
+.slicknav_menu
+	display: none
+	background: rgba(0,0,0,.75)
+	width: 100%
+	position: absolute
+	top: 80px
+	left: 0
+	padding: 0px
+.slicknav_nav
+	display: flex
+	flex-direction: column
+	justify-content: center!important
+	align-items: center
+	height: 100vh
+	a		
+		&:hover,
+		&.active_a
+			background: transparent
+			color: rgb(255, 255, 255);
+			border: 1px solid #fff
+			border-radius: 20px
+
+.slicknav_btn
+	display: none
+	background: #19bd9a
+	position: absolute
+	right: 6%
+	top: -85px
+	padding: 10px
+	margin: 0
+	+transit(all, 0.5s, ease-in-out)
+	&:hover
+		background: #178c73
+.slicknav_menu .slicknav_icon-bar
+	width: 20px
+	box-shadow: none
+.slicknav_btn .slicknav_icon-bar+.slicknav_icon-bar
+	margin-top: 7px
 
 .greeting_wrap
 	display: flex
