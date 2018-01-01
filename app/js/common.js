@@ -1,10 +1,8 @@
 $(function() {
 
-  $(function(){
-    $('#menu').slicknav({
+  $('#menu').slicknav({
       prependTo:'nav',
       parentTag:'div',
-    });
   });
 
   $('.menu li a').mPageScroll2id();
@@ -12,15 +10,13 @@ $(function() {
   $('nav.menu li a').on('click', function(){
     $('nav.menu li a').removeClass('active_a');
     $(this).addClass('active_a');
-    console.log('!!!');
   });
 
   $('.slicknav_menu li a').mPageScroll2id();
 
-  $('.slicknav_nav li a').on('click', function(){  
+  $('.slicknav_nav li a').on('click', function(e){  
     $('.slicknav_nav a').removeClass('active_a');
     $(this).addClass('active_a');
-    console.log('!!!');
   });
 
   $('.grid').imagesLoaded( function() {
@@ -72,5 +68,22 @@ $(function() {
         disableOnInteraction: false,
       }
     });
+
+////////////////////////////////////////custom scripts 
+
+  $(window).on('scroll', function(){
+    if(scrollY > 90){
+      $('.menu_wrap').css({
+        'background': 'rgba(0,0,0,.8)'
+      });
+    }else{
+      $('.menu_wrap').css({
+        'background': 'transparent'
+      });
+    }
+  });
+  $('.arrow_down').on('click', function(){
+    $('html, body').animate({ scrollTop: 650}, 700, 'linear');
+  });
 
 });
