@@ -63,10 +63,10 @@ $(function() {
         el: '.swiper-pagination',
         clickable: true,
       },
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      }
+      //autoplay: {
+      //delay: 3500,
+      //disableOnInteraction: false,
+     // }
     });
 
 ////////////////////////////////////////custom scripts 

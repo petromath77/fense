@@ -15,10 +15,7 @@
 		margin-top: 20px
 	.main
 		width: 40%
-		/* Medium Devices, Desktops */
-@media only screen and (max-width : 1100px)
-	.impress_desc
-		width: 50%
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	#menu
@@ -59,13 +56,31 @@
 		width: 100%
 	.round_wrap
 		width: 100%
+	.monitor_wrap
+		display: block
+	.testims_img
+		width: 20%
+	.testims-descr
+		width: 75%
+	.news_descr_wrap
+		width: 70%
+		h5
+			margin-bottom: 40px
+@media only screen and (max-width : 819px)
+	/**/
+	.portf_menu
+		width: 100%
+		justify-content: center
+		flex-wrap: wrap
+		li
+			margin-right: 20px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
 	.portfolio_items
 		margin-left: 20%;
 	.grid-item
-		width: 80.0%
+		width: 80%
 	.greeting_wrap
 		h1
 			line-height: 40px
@@ -110,6 +125,47 @@
 			margin-right: 20px
 			&:last-child
 				margin-right: 0
+	.monitor_wrap
+		display: none
+	.impress_desc
+		width: 70%
+	.team_wrap
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.team_img
+		width: 60%
+	.team_data
+		width: 80%
+	.team_data_wrap
+		align-items: center
+		text-align: center
+	.spam 
+		h2
+			margin-bottom: 30px
+	.testimonials_container
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.testims_img
+		width: 30%
+		margin-bottom: 20px
+	.news_descr_wrap
+		width: 90%
+		h5
+			margin-bottom: 30px
+
+@media only screen and (max-width : 608px)
+	/**/
+	.portf_menu
+		margin-right: -20px
+		li
+			margin-bottom: 10px
+	.news_descr_wrap
+		h5
+			margin-bottom: 20px
+		a.more
+			bottom: 0
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
@@ -124,7 +180,25 @@
 	.submit_txt 
 		h2
 			font-size: 18px
-	
+	.impress_desc
+		width: 90%
+	.round_wrap
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-top: 20px
+	.round_item
+		margin: 0 0  40px 0
+		&:last-child
+			margin: 0 
+	.team_img
+		width: 80%
+	.team_data
+		width: 100%
+	.swiper-slide
+		p
+			max-height: 150px
+			text-overflow: elipsis
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
