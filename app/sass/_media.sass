@@ -15,7 +15,13 @@
 		margin-top: 20px
 	.main
 		width: 40%
-
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1180px)
+	.price_item
+		width: 31%
+@media only screen and (max-width : 1140px)
+	.price_hidden
+		padding: 35px 20px 100px;
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	#menu
@@ -66,6 +72,20 @@
 		width: 70%
 		h5
 			margin-bottom: 40px
+	.price_wrap
+		justify-content: space-around
+	.price_item
+		width: 40%
+		margin-bottom: 50px
+	.price_hidden
+		padding: 35px 35px 100px
+	.contact_item
+		width: 40%
+		margin-bottom: 50px
+@media only screen and (max-width : 890px)
+	/**/
+	.price_item
+		width: 55%
 @media only screen and (max-width : 819px)
 	/**/
 	.portf_menu
@@ -150,11 +170,30 @@
 	.testims_img
 		width: 30%
 		margin-bottom: 20px
+	.news_wrapper
+		margin: 70px auto 0;
 	.news_descr_wrap
 		width: 90%
 		h5
 			margin-bottom: 30px
-
+	p.new
+		width: 90%
+	.price_item
+		width: 65%
+	.form_wrap
+		width: 70%
+	.contact_item
+		width: 60%
+		&:last-child
+			margin-bottom: 0
+	.name_adress_inp
+		flex-direction: column
+	.form_contact
+		.inp_text
+			width: 100%
+			margin-bottom: 30px
+	.message
+		margin: 0 0 30px;
 @media only screen and (max-width : 608px)
 	/**/
 	.portf_menu
@@ -166,6 +205,10 @@
 			margin-bottom: 20px
 		a.more
 			bottom: 0
+	.price_item
+		width: 80%
+	.contact_item
+		width: 70%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
@@ -195,10 +238,34 @@
 		width: 80%
 	.team_data
 		width: 100%
-	.swiper-slide
-		p
-			max-height: 150px
-			text-overflow: elipsis
+	.news_wrapper
+		margin: 50px auto 0;
+	.news_wrapper
+		max-height: 380px
+	p.txt
+		height: 260px
+		overflow: hidden
+	.price_hidden
+		padding: 35px 20px 100px;
+	.form_wrap
+		flex-direction: column
+	.inp_text
+		margin: 0 0 20px 0
+	.inp_text,	
+	.inp_sub
+		width: 100%	
+	.contact_item
+		width: 85%
+	.form_contact 
+		.inp_sub
+			margin-bottom: 0
+	.footer_wrap
+		text-align: center
+	/* Custom, iPhone Retina */
+@media only screen and (max-width : 371px)
+	/**/
+	p.txt
+		height: 240px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
