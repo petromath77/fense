@@ -19,13 +19,13 @@ $(function() {
     $(this).addClass('active_a');
   });
 
-  $('.grid').imagesLoaded( function() {
-    $('.grid').masonry({
+  //$('.grid').imagesLoaded( function() {
+   // $('.grid').masonry({
       // options
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-item'
-    });
-  });
+     // itemSelector: '.grid-item',
+     // columnWidth: '.grid-item'
+    //});
+ // });
 	
 	$('.value-percent').each(function() {
 	  var dataValue = $(this).data('inner');
@@ -69,6 +69,8 @@ $(function() {
      // }
     });
 
+    $('.portfolio_items').mixItUp();
+
 ////////////////////////////////////////custom scripts 
 
   $(window).on('scroll', function(){
@@ -84,6 +86,19 @@ $(function() {
   });
   $('.arrow_down').on('click', function(){
     $('html, body').animate({ scrollTop: 650}, 700, 'linear');
+  });
+
+  $('.portf_menu li').on('click', function(){
+    $('.item_wrap').css({
+      'float': 'left',
+      'margin': '0 0 0'
+    });
+  });
+  $('#all').on('click', function(){
+    $('.item_wrap').css({
+      'float': 'none',
+      'margin': '0 0 .5em'
+    });
   });
 
 });
