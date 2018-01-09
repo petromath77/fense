@@ -16,10 +16,12 @@
 	margin: 70px auto 30px
 	display: flex
 	flex-direction: row
-	justify-content: center
-
-.inp_text
+	justify-content: space-around
+.form-group
 	width: 65%
+	position: relative
+.inp_text
+	width: 100%
 	background: transparent
 	border: 1px solid #81868e
 	padding: 10px 0  10px 20px
@@ -29,6 +31,11 @@
 	letter-spacing: 1px
 	margin-right: 10px
 	outline: none
+.help-block
+	position: absolute
+	top: 40px
+	left: 20px
+	color: #19bd9a
 .inp_text
 	@include placeholder
 		font-size: 14px
@@ -41,7 +48,7 @@
 	border: none
 	font-size: 14px 
 	line-height: 14px
-	padding: 15px 0
+	padding: 12px 0
 	color: #fff
 	text-transform: uppercase
 	letter-spacing: 1px

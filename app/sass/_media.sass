@@ -3,16 +3,16 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1237px)
-	.grid-item
-		width: 32.0%
+
 @media only screen and (max-width : 1200px)
 	/**/
 	.title_wrap_cont
 		h1
-			margin-bottom: 25px
+			margin-bottom: 15px
 	.links
-		margin-top: 20px
+		margin-top: 15px
+	.title_wrap_cont
+		width: 87%
 	.main
 		width: 40%
 /* Medium Devices, Desktops */
@@ -49,9 +49,7 @@
 				width: 80%
 				margin-left: 0
 	.portfolio_items
-		margin-left: 8%;
-	.grid-item
-		width: 45.5%
+		column-count: 3
 	.main
 		width: 45%
 	.service_tab_content
@@ -97,10 +95,15 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	/**/
+	.title_wrap_cont
+		h1
+			margin-bottom: 20px
+	.links
+		margin-top: 25px
+	.title_wrap_cont
+		width: 75%
 	.portfolio_items
-		margin-left: 20%;
-	.grid-item
-		width: 80%
+		column-count: 2
 	.greeting_wrap
 		h1
 			line-height: 40px
@@ -181,7 +184,7 @@
 	.price_item
 		width: 65%
 	.form_wrap
-		width: 70%
+		width: 80%
 	.contact_item
 		width: 60%
 		&:last-child
@@ -194,21 +197,27 @@
 			margin-bottom: 30px
 	.message
 		margin: 0 0 30px;
+	.news_popup_wrap
+		width: 70%
 @media only screen and (max-width : 608px)
 	/**/
+	.portfolio_items
+		column-count: 1
 	.portf_menu
 		margin-right: -20px
 		li
 			margin-bottom: 10px
 	.news_descr_wrap
 		h5
-			margin-bottom: 20px
+			margin-bottom: 25px
 		a.more
 			bottom: 0
 	.price_item
 		width: 80%
 	.contact_item
 		width: 70%
+	.news_popup_wrap
+		width: 80%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
@@ -259,8 +268,12 @@
 	.form_contact 
 		.inp_sub
 			margin-bottom: 0
-	.footer_wrap
-		text-align: center
+	.form-group
+		width: 100%
+	.inp_text
+		margin-bottom: 35px
+	.help-block
+		top: 40px
 	/* Custom, iPhone Retina */
 @media only screen and (max-width : 371px)
 	/**/

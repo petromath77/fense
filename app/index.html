@@ -330,7 +330,7 @@
 		<div class="container">
 			<div class="portfolio_wrapper">
 				<ul class="portf_menu">
-					<li class="filter" id="all" data-filter="all">All Works</li>
+					<li class="filter active_li" id="all" data-filter="all">All Works</li>
 					<li class="filter" data-filter=".print">Print</li>
 					<li class="filter" data-filter=".ident">Identity</li>
 					<li class="filter" data-filter=".brand">Branding</li>
@@ -688,21 +688,48 @@
 						<h4>by <span>Kabir Uddin</span></h4>
 						<h5>6950 Likes - 243 Comments - 703 shares</h5>
 						<p class="txt">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...</p>
-						<a href="#" class="more">+ Read More</a>
+						<a href="" class="more">+ Read More</a>
+						<div class="hide">
+							<div class="news_popup_wrap">
+								<div class="news_popup_desc">
+									<img src="img/greet.png" alt="news1">
+									<h1>The trending Landing Pages</h1>
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="swiper-slide">
 						<h2>The trending Landing Pages</h2>
 						<h4>by <span>Kabir Uddin</span></h4>
 						<h5>6950 Likes - 243 Comments - 703 shares</h5>
 						<p class="txt">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...</p>
-						<a href="#" class="more">+ Read More</a>
+						<a href="" class="more">+ Read More</a>
+						<div class="hide">
+							<div class="news_popup_wrap">
+								<div class="news_popup_desc">
+									<img src="img/greet.png" alt="news2">
+									<h1>The trending Landing Pages</h1>
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="swiper-slide">
 						<h2>The trending Landing Pages</h2>
 						<h4>by <span>Kabir Uddin</span></h4>
 						<h5>6950 Likes - 243 Comments - 703 shares</h5>
 						<p class="txt">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...</p>
-						<a href="#" class="more">+ Read More</a>
+						<a href="" class="more">+ Read More</a>
+						<div class="hide">
+							<div class="news_popup_wrap">
+								<div class="news_popup_desc">
+									<img src="img/greet.png" alt="news3">
+									<h1>The trending Landing Pages</h1>
+									<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="swiper-pagination"></div>
@@ -787,8 +814,11 @@
 			<h1>Subscribe us</h1>
 			<p class="new">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
 			<div class="container">
-				<form class="form_wrap">
-					<input type="text" class="inp_text" placeholder="Email Adress">
+				<form class="form_wrap" role="form" method="post" novalidate>
+					<div class="form-group">
+						<input type="email" class="inp_text" name="email" placeholder="Email Adress" required data-validation-required-message="Requred Email!" required data-validation-email-message="Incorrect Email!">
+						<span class="help-block text-danger"></span>
+					</div>
 					<input type="submit" value="Submit" class="inp_sub">
 				</form>
 			</div>
@@ -837,13 +867,22 @@
 		<section class="contact_form">
 			<div class="container">
 				<div class="contact_form_wrap">
-					<form class="form_contact">
+					<form class="form_contact" role="form" method="post" novalidate>
 						<div class="name_adress_inp">
-							<input type="text" class="inp_text" placeholder="Your name">
-							<input type="text" class="inp_text" placeholder="Email address">
-							<input type="text" class="inp_text" placeholder="Subject">
+							<div class="form-group_email">
+								<input type="text" class="inp_text" name="name" placeholder="Your name" required ata-validation-required-message="This field is necessary!" required/>
+								<span class="help-block text-danger" ></span>
+							</div>
+							<div class="form-group_email">
+								<input type="email" class="inp_text" placeholder="Email address">
+							</div>
+							<div class="form-group_email">
+								<input type="text" class="inp_text" placeholder="Subject">
+							</div>
 						</div>
-						<textarea name="message" class="message"></textarea>
+						<div class="form-group_mes">
+							<textarea name="message" class="message"></textarea>
+						</div>
 						<input type="submit" value="Submit now" class="inp_sub">
 					</form>
 				</div>

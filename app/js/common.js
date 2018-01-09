@@ -71,6 +71,17 @@ $(function() {
 
     $('.portfolio_items').mixItUp();
 
+    $('.more').magnificPopup({
+      type: 'inline',
+      showCloseBtn: true
+    });
+    $('.swiper-slide').each(function(i){
+      $(this).find('a').attr('href', '#news_' + i);
+      $(this).find('.news_popup_wrap').attr('id', 'news_' + i);
+    });
+
+    $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+
 ////////////////////////////////////////custom scripts 
 
   $(window).on('scroll', function(){
@@ -87,12 +98,14 @@ $(function() {
   $('.arrow_down').on('click', function(){
     $('html, body').animate({ scrollTop: 650}, 700, 'linear');
   });
-
+/////////////////////////////////////
   $('.portf_menu li').on('click', function(){
     $('.item_wrap').css({
       'float': 'left',
       'margin': '0 0 0'
     });
+     $('.portf_menu li').removeClass('active_li');
+     $(this).addClass('active_li');
   });
   $('#all').on('click', function(){
     $('.item_wrap').css({
@@ -100,5 +113,7 @@ $(function() {
       'margin': '0 0 .5em'
     });
   });
+/////////////////////////////////////
+
 
 });
