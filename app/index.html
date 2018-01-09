@@ -869,21 +869,24 @@
 				<div class="contact_form_wrap">
 					<form class="form_contact" role="form" method="post" novalidate>
 						<div class="name_adress_inp">
-							<div class="form-group_email">
-								<input type="text" class="inp_text" name="name" placeholder="Your name" required ata-validation-required-message="This field is necessary!" required/>
+							<div class="form-group email">
+								<input type="text" class="inp_text" name="name" placeholder="Your name" data-validation-required-message="This field is necessary!" required/>
 								<span class="help-block text-danger" ></span>
 							</div>
-							<div class="form-group_email">
-								<input type="email" class="inp_text" placeholder="Email address">
+							<div class="form-group email">
+								<input type="email" class="inp_text" placeholder="Email address" name="email" required data-validation-required-message="Required Email!" required data-validation-email-message="Incorrect Email!">
+								<span class="help-block text-danger" ></span>
 							</div>
-							<div class="form-group_email">
-								<input type="text" class="inp_text" placeholder="Subject">
+							<div class="form-group email">
+								<input type="text" class="inp_text" placeholder="Subject" placeholder="Your name" data-validation-required-message="This field is necessary!" required/>
+								<span class="help-block text-danger"></span>
 							</div>
 						</div>
-						<div class="form-group_mes">
-							<textarea name="message" class="message"></textarea>
+						<div class="form-group message">
+							<textarea name="message" class="mes" name="message" placeholder="Your message" data-validation-required-message="This field is necessary!" required></textarea>
+							<span class="help-block text-danger" ></span>
 						</div>
-						<input type="submit" value="Submit now" class="inp_sub">
+						<input type="submit" value="Submit now" class="inp_sub_email">
 					</form>
 				</div>
 			</div>

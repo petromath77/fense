@@ -18,14 +18,6 @@ $(function() {
     $('.slicknav_nav a').removeClass('active_a');
     $(this).addClass('active_a');
   });
-
-  //$('.grid').imagesLoaded( function() {
-   // $('.grid').masonry({
-      // options
-     // itemSelector: '.grid-item',
-     // columnWidth: '.grid-item'
-    //});
- // });
 	
 	$('.value-percent').each(function() {
 	  var dataValue = $(this).data('inner');
