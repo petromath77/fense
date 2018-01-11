@@ -55,10 +55,10 @@ $(function() {
         el: '.swiper-pagination',
         clickable: true,
       },
-      //autoplay: {
-      //delay: 3500,
-      //disableOnInteraction: false,
-     // }
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      }
     });
 
     $('.portfolio_items').mixItUp();
@@ -106,6 +106,15 @@ $(function() {
     });
   });
 /////////////////////////////////////
+  
+  $('.animation_1').animated('fadeInUp', 'fadeOutDown');
+  $('.animation_2').animated('fadeInLeft', 'fadeOutLeft');
+  $('.animation_3').animated('fadeInRight', 'fadeOutRight');
+  $('.animation_4').animated('fadeIn', 'fadeOut');
+  $('.animation_5').animated('flipInY', 'flipOutY');
+  $('.animation_6').animated('bounceIn', 'bounceOut');
 
-
+  $('.map_desc').on('click', function(){
+    $('.map_over').fadeOut(1000);
+  });
 });

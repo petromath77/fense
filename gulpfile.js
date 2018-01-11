@@ -36,6 +36,8 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jQmigrate/jqmigrate.js',
 		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 		'app/libs/jqBootstrapValidation/jqBootstrapValidation.js',
+		'app/libs/waypoints/waypoints.min.js',
+		'app/libs/animate/animate-css.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
