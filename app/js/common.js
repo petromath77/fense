@@ -118,3 +118,7 @@ $(function() {
     $('.map_over').fadeOut(1000);
   });
 });
+$(window).on('load', function(){
+  $('.loader_inner').fadeOut();
+  $('.loader').delay(400).fadeOut('slow');
+});
