@@ -55,23 +55,25 @@ section.portfolio
 		width: 60%
 		transform: translateY(5px)!important;
 .portfolio_items
-	column-count: 4;
-	overflow: hidden
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center
+		flex-wrap: wrap
 .item_wrap
-	position: relative
-	width: 100%
-	display: none
-	overflow: hidden
+	width: 25%
+	height: auto
 	cursor: pointer
-	margin: 0 0 0.5em
-	//float: left
-	
-	&:hover
-		.title_wrap
-			transform: translateX(0px);
+	position: relative
+	overflow: hidden
+	padding: 0
+	display: none
+	margin: 0!important
+	&:hover	.title_wrap
+		transform: translateX(0px);
 	img
 		width: 100%
-		min-height: 230px
+		height: auto
 		vertical-align: middle
 .title_wrap
 	position: absolute

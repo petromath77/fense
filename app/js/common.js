@@ -77,7 +77,7 @@ $(function() {
 ////////////////////////////////////////custom scripts 
 
   $(window).on('scroll', function(){
-    if(scrollY > 90){
+    if(pageYOffset > 90){
       $('.menu_wrap').css({
         'background': 'rgba(0,0,0,.8)'
       });
@@ -116,6 +116,9 @@ $(function() {
 
   $('.map_desc').on('click', function(){
     $('.map_over').fadeOut(1000);
+  });
+  $('.arrow_down_small a').on('click', function(event){
+    event.stopPropagation();
   });
 });
 $(window).on('load', function(){
